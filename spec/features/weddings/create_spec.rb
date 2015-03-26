@@ -12,7 +12,7 @@ describe "Creating weddings" do
 
 		visit "/weddings"
 		click_link "New Wedding"
-		expect(page).to have_content "New wedding"
+		expect(page).to have_content "New Wedding"
 
 		fill_in "Name", with: options[:name]
 		fill_in "Bride", with: options[:bride]
